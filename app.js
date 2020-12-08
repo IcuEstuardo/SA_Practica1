@@ -3,9 +3,13 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('hola mundo');
+  res.status(200).json({
+    data: "Software Avanzado"
+  })
 })
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+module.exports = app
