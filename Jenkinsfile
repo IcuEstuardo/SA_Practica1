@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 dir('template') {
-                    sh 'cp / /var/www/html'
+                    sh 'cp -r / /var/www/html'
                 }
             }
         }
