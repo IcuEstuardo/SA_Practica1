@@ -14,7 +14,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                dir('template') {
+                    sh 'cp / /var/www/html'
+                }
             }
         }
     }
