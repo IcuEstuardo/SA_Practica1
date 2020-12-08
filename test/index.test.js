@@ -20,7 +20,7 @@ describe("Software Avanzado Server", () => {
       chai.request(app)
         .get('/')
         .end((err, res) => {
-          expect(res.body.data).to.have.string('Software Avanzado ERROR');
+          expect(res.body.data).to.have.string('Software Avanzado');
           done();
         });
     });
