@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 dir('template') {
-                    sh 'cp -R /template /home/ubuntu/site-content'
+                    sh 'pwd'
                 }
             }
         }
