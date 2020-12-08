@@ -17,7 +17,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 dir('template') {
-                    sh 'pwd'
+                    sh 'cp index.html /home/ubuntu/site-content'
+                    sh 'cp fun.js /home/ubuntu/site-content'
                 }
             }
         }
