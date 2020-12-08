@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'npm test'
+                sh 'npm test'
             }
         }
         stage('Deploy') {
